@@ -30,4 +30,4 @@ jobs:
       - name: Commit and Push new README.md to the repository
         uses: mikeal/publish-to-github-action@master
         env:
-          ssh-private-key: ${{ secrets.SECRET-KEY }}
+          GITHUB_TOKEN: ${{ secrets.SECRET-KEY }}
